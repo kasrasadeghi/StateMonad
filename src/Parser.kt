@@ -70,8 +70,7 @@ infix fun ((String) -> Pair<Boolean, String>).or(rightParser: (String) -> Pair<B
 
 fun test() {
   println("pchar('h')(\"hello\")                  => ${pchar('h')("hello")}")
-  println("(pchar('h') and pchar('e'))(\"hello\") => " +
-      "${(pchar('h') and pchar('e') and pchar('l') and pchar('l') and pchar('o'))("hello")}")
+  println("(pchar('h') and pchar('e'))(\"hello\") => ${(pchar('h') and pchar('e'))("hello")}")
 }
 
 /*
